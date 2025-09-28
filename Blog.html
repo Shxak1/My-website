@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Updates & Blogs | College Connect</title>
+<link href="blog2.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<img src="Logo for college.jpeg" alt="College Logo" class="logo">
+<nav>
+<a href="college connect.html">Home</a>
+<a href="college connect.html">About</a>
+<a href="college connect.html">Departments</a>
+<a href="college connect.html">Student services</a>
+<a href="Blog.html">News</a>
+<a href="Blog.html">Updates & Blogs</a>
+</nav>
+<div class="header-actions">
+<button class="login-button" onclick="document.getElementById('loginModal').style.display='flex'">Login</button>
+</div>
+</header>
+
+<section class="updates-page">
+<h1 class="page-title">Updates & Blogs</h1>
+
+<div class="top-content-grid">
+<div class="content-box news-box">
+<h2>News</h2>
+<ul>
+<li>New library system launched for students.</li>
+<li>College ranked top 10 nationally in innovation.</li>
+<li>Partnership signed with leading tech company.</li>
+</ul>
+</div>
+
+<div class="content-box events-announcements-box">
+<h2>Events Announcements</h2>
+<ul>
+<li>Registration for Hackathon 2025 is now open.</li>
+<li>Don't miss the Entrepreneurship Workshop next week.</li>
+<li>Join us for the Annual Graduation Ceremony in October.</li>
+</ul>
+</div>
+</div>
+
+<div class="bottom-content-grid">
+<div class="post-card">
+<img src="winning.jpeg" alt="Student holding certificate and trophy">
+<div class="post-info">
+<h3>List Blog Posts - Student Success Story</h3>
+<p>From idea to award-winning project - be inspired by a student's journey.</p>
+</div>
+</div>
+
+<div class="post-card">
+<img src="job.jpeg" alt="Two professionals shaking hands at a career fair">
+<div class="post-info">
+<h3>List Events - Career Fair</h3>
+<p>Meet top companies and explore job opportunities.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div id="loginModal" class="modal">
+<div class="modal-content">
+<span class="close-button" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+<h2>User Login</h2>
+<form>
+<div class="input-group">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+</div>
+<div class="input-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+</div>
+<button type="submit" class="submit-button">Sign In</button>
+</form>
+</div>
+</div>
+<script>
+
+var modal = document.getElementById('loginModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+<footer>
+<div class="footer-content">
+<div>College connect:</div>
+<div class="social-links">
+<a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+<a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+<a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"><a>
+</div>
+</div>
+</footer>
+</body>
+</html>

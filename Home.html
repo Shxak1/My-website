@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College Connect</title>
+<link href="style2.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<img src="Logo for college.jpeg" alt="College Logo" class="logo">
+<nav>
+<a href="college connect.html">Home</a>
+<a href="college connect.html">About</a>
+<a href="college connect.html">Departments</a>
+<a href="college connect.html">Student services</a>
+<a href="Blog.html">News</a>
+<a href="Blog.html">Updates & Blogs</a>
+</nav>
+<div class="header-actions">
+<button class="login-button" onclick="document.getElementById('loginModal').style.display='flex'">Login</button>
+</div>
+</header>
+
+<section class="hero">
+<h1>Welcome to Our College</h1>
+<p>Your future starts here with knowledge and opportunities</p>
+</section>
+
+<section class="about">
+<h2>About the College</h2>
+<div class="about-content">
+<p>
+Our college is committed to excellence in education and innovation.
+We aim to prepare students with strong academic knowledge, practical skills,
+and leadership qualities to face global challenges.
+</p>
+<p>
+We provide a supportive learning environment, modern facilities, and opportunities for
+research, creativity and community engagement. By combining tradition with technology, we
+empower students to build successful futures and contribute positively to society.
+</p>
+</div>
+</section>
+
+<section class="departments">
+<h2>Departments</h2>
+<div class="cards-grid">
+<div class="card">Computer Science – Focus on programming, AI, and modern technologies.</div>
+<div class="card">Engineering – Explore mechanical, electrical, and civil fields.</div>
+<div class="card">Health Sciences – Training in nursing, pharmacy, and medical labs.</div>
+<div class="card">Business Administration – Learn management, marketing, and finance.</div>
+<div class="card">Design & Media – Creative studies in design, animation, and digital media.</div>
+<div class="card">Law – Study legal systems, rights, and justice.</div>
+</div>
+</section>
+
+<section class="services">
+<h2>Student Services</h2>
+<div class="cards-grid">
+<div class="card">Personal Support</div>
+<div class="card">Academic Support</div>
+</div>
+</section>
+
+<div id="loginModal" class="modal">
+<div class="modal-content">
+<span class="close-button" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+<h2>User Login</h2>
+<form>
+<div class="input-group">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+</div>
+<div class="input-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+</div>
+<button type="submit" class="submit-button">Sign In</button>
+</form>
+</div>
+</div>
+
+<script>
+var modal = document.getElementById('loginModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+<footer>
+<div class="footer-content">
+<div>College connect:</div>
+<div class="social-links">
+<a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+<a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+<a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+</div>
+</div>
+</footer>
+</body>
+</html>
